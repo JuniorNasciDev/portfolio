@@ -1,0 +1,23 @@
+
+#hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.img-title-hero{
+    width: 150px;
+    height: 150px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 5em;
+}
+
+.img-title-one{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}

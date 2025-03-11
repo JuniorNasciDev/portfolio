@@ -1,6 +1,9 @@
+/* ************* importação styles ****************/
 @import url(styles/nav-main.css);
+@import url(styles/hero.css);
 
 
+/* ************* Reset PAgina ****************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,7 +59,7 @@ table {
 
 /* ************ FONTES PRINCIPAIS ******************/
 :root{
-    --fonte-principal: 'Roboto', sans-serif;
+    --font-principal: 'Roboto', sans-serif;
     --font-secundaria: "Montserrat", sans-serif;
     --font-destaque: "Playfair Display", serif;
 }
@@ -65,7 +68,19 @@ table {
     --cor-rosa: #D98292;
     --cor-branca-1:white;
     --cor-branca-2:#D9BD8B;
+    --cor-laranja-1: #D9663D;
+    --cor-vermelha-1:#F21313;
+    --cor-marrom-1:#260F0F;
+    --cor-preta-1:#000000;
 }
+
+/* ************ Definições principais da pagina *****************/
+
+body{
+    background-color: var(--cor-preta-1);
+    font-family: var(--font-principal);
+}
+
 
 
 
