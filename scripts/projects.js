@@ -14,9 +14,8 @@ const swiper = new Swiper(".swiper", {
   });
 
 
-  //** botões de navegação  */
+
+  // nessa parte eu crio as funções de troca de imagens para conseguir
 
 
-  function clicou (){
-    alert('ola porra')
-  }
+  
