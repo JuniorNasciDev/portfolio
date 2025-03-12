@@ -1,6 +1,7 @@
 /* ************* importação styles ****************/
 @import url(styles/nav-main.css);
 @import url(styles/hero.css);
+@import url(styles/about.css);
 
 
 /* ************* Reset PAgina ****************/
@@ -81,9 +82,9 @@ body{
     font-family: var(--font-principal);
 }
 
-
-
-
+html {
+    scroll-behavior: smooth;
+  }
 
 
 

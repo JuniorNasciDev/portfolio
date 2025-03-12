@@ -1,0 +1,83 @@
+#about {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box-sobre{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+
+  .box-sobre-img{
+    width: 50vw;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    max-width: 450px;
+  }
+
+  .img-sobre-s{
+    width: 100%;
+  }
+
+  .box-biografia{
+    overflow: hidden;
+    width: 80vw;
+    max-width: 850px;
+  }
+
+  .sub-nav-biografia{
+    display: flex;
+    margin: 1em -7px;
+    width: 100%;
+  }
+
+  .sub-nav-biografia-item{
+    padding: 0px;
+  }
+
+
+  .sub-nav-biografia-link{
+    background: none;
+    color: #9c0c0c;;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  #title-text-biografia{
+    font-size: 2em;
+    font-family: var(--font-destaque);
+    font-weight: 800;
+  }
+
+  #box-text-biografia{
+    height: 300px;
+    text-wrap: wrap;
+    overflow: auto;
+    scrollbar-width: 0px;
+    scrollbar-width: none;
+
+  }
+
+  .text-paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 1em 0em;
+  }
+
+
+
+  /*Aqui irei fazer minhas animações hover do about*/

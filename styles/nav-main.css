@@ -38,7 +38,7 @@
   }
 
   .menu-hamburguer{
-    position: absolute;
+    position: fixed;
   }
 
 /*aqui irei definir a Animação hover de todo o menu navegação*/
@@ -88,7 +88,7 @@
     top: 20px;
     left: 20px;
     z-index: 10;
-    background-color: rgba(0, 0, 0, 0.712);
+    background-color: rgba(0, 0, 0, 0);
     background-image: url(../images/icons/nav-icon-red.png);
     background-size: contain;
     background-repeat: no-repeat;
