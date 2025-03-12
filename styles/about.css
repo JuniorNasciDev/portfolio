@@ -102,14 +102,26 @@
   /*tela 630(w) X 932(h) */
 
 @media (max-width: 760px) {
+  
 
 }
 
 
 
 @media (max-width: 550px) {
-  
+  .box-sobre{
+    margin-top: 0px;
+  }
+  .box-sobre-img{
+    width: 60vw;
+    overflow: hidden;
+    height: 200px;
+  }
 
+  #box-text-biografia{
+    height: 250px;
+    margin-bottom: 0px;
+  }
 }
 
 
