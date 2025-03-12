@@ -3,7 +3,6 @@
 #nav-main {
   position: fixed;
   width: 100%;
-  display: none;
 }
 
 .nav-list {
@@ -98,6 +97,7 @@
   }
 
   #nav-main{
+    display: none;
   }
   #menu-toc:checked ~ #nav-main{
     display: flex;

@@ -9,15 +9,59 @@
 
 
 .img-title-hero{
-    width: 150px;
-    height: 150px;
-    border: 1px solid red;
-    border-radius: 10px;
-    margin: 5em;
+    width: 200px;
+    margin: 10em auto 0em;
 }
 
 .img-title-one{
     display: flex;
     flex-direction: column;
     color: white;
+}
+
+.sub-title-one{
+    font-size: 22px;
+}
+
+.title-one{
+    font-size: 10em;
+}
+
+.sub-title-two{
+    text-align: end;
+    font-size: 22px;
+}
+
+.hero-box-buttons{
+    display: flex;
+    margin: 3em
+}
+
+.buttons-hero{
+    font-size: 3em;
+    margin: 0em 1em;
+    border: 1px solid #F21313;
+    background: none;
+    color: white;
+    padding: 0em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons-hero:hover{
+    background-color: #F21313;
+    box-shadow: 0px 2px 10px 4px #9c0c0c;
+}
+
+.link-hero-saibamais{
+    color: white;
+}
+.box-saibamais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4em 0em;
+}
+.img-saibamais{
+    width: 2em;
 }
