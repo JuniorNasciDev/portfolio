@@ -36,8 +36,8 @@
   }
 
   .principal-img-window{
-    border: 1px solid red;
-    flex-grow: 1;
+    height: 100%;
+    width: 100%;
   }
   
   .sub-imgs{
@@ -45,11 +45,16 @@
     flex-direction: column;
     width: 20%;
     height: 100%;
+    justify-content: space-between;
   }
 
   .sub-imgs-window{
-    flex-grow: 2;
-    margin: 1px;
-    border: 1px solid red;
+    flex-grow: 1;
+    max-height: 24%;
+    margin: 0px 3% 0px ;
 
   }
+
+
+
+  

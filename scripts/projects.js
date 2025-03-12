@@ -1,6 +1,7 @@
 const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween: 10,
+    effect:'cube',
     loop: true, // Loop infinito
     navigation: {
       nextEl: ".swiper-button-next",
@@ -14,3 +15,8 @@ const swiper = new Swiper(".swiper", {
 
 
   //** botões de navegação  */
+
+
+  function clicou (){
+    alert('ola porra')
+  }
