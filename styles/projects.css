@@ -1,0 +1,55 @@
+#projects {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .swiper {
+    width: 90vw;
+    height: 400px; /* Ou o tamanho desejado */
+  }
+
+  .swiper-slide {
+    display: flex;
+    font-size: 24px;
+   /* Apenas para visualização */
+    cursor: pointer;
+    width: 100%;
+
+  }
+
+  .project{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+  }
+
+  .principal{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    
+  }
+
+  .principal-img-window{
+    border: 1px solid red;
+    flex-grow: 1;
+  }
+  
+  .sub-imgs{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+  }
+
+  .sub-imgs-window{
+    flex-grow: 2;
+    margin: 1px;
+    border: 1px solid red;
+
+  }

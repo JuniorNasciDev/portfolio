@@ -52,7 +52,7 @@
 
   .sub-nav-biografia-link{
     background: none;
-    color: #9c0c0c;;
+    color: #750a0a;;
     border: none;
     font-weight: 600;
     cursor: pointer;
@@ -99,6 +99,14 @@
 
   /*Aqui irei fazer minhas animações hover do about*/
 
+.sub-nav-biografia-link:hover{
+  color: #FF0B0B;
+}
+
+
+
+
+
   /*tela 630(w) X 932(h) */
 
 @media (max-width: 760px) {
@@ -125,4 +133,3 @@
 }
 
 
-/* medias q ueriessssss*/

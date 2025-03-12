@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junior Nasci</title>
     <link rel="stylesheet" href="style.css">
+    <!-- aqui estou adicionando o style do carrosel de projetos-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -28,13 +30,14 @@
                     <a href="#about" class="nav-link">SOBRE</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">PROJETOS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">CONTATO</a>
+                    <a href="#projects" class="nav-link">PROJETOS</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">CERTIFICADOS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTATO</a>
+                    
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">CRÉDITOS</a>
@@ -119,7 +122,7 @@
             </div>
 
             <div class="box-saibamais box-about-saibamais">
-                <a class="link-hero-saibamais" href="#about">conhecer Projetos</a>
+                <a class="link-hero-saibamais" href="#projects">conhecer Projetos</a>
                 <img class="img-saibamais" src="images/icons/caret-down white.png" alt="seta">
             </div>
 
@@ -127,8 +130,59 @@
     </section>
 
     <section id="projects">
+        <!-- Estrutura basica de um carrosel no swiper-->
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Projeto 1 -->
+              <div class="swiper-slide">
+               
+                <div class="project">
+                    <div class="principal">
+                        <img class="principal-img-window" src="imgp.jpg" alt="imagem p">
+                    </div>
+                    <div class="sub-imgs">
+                        <img class="sub-imgs-window" src="img1.jpg" alt="Imagem 1">
+                        <img class="sub-imgs-window" src="img2.jpg" alt="Imagem 2">
+                        <img class="sub-imgs-window" src="img3.jpg" alt="Imagem 3">
+                        <img class="sub-imgs-window" src="img4.jpg" alt="Imagem 4">
+                    </div>
+                </div>
+              </div>
+              
+              <!-- Projeto 2 -->
+              <div class="swiper-slide">
+               
+                <div class="project">
+                    <div class="principal">
+                        <img src="imgp.jpg" alt="imagem p">
+                    </div>
+                    <div class="sub-imgs">
+                        <img src="img1.jpg" alt="Imagem 1">
+                        <img src="img2.jpg" alt="Imagem 2">
+                        <img src="img3.jpg" alt="Imagem 3">
+                        <img src="img4.jpg" alt="Imagem 4">
+                    </div>
+                </div>
+              </div>
+          
+              <!-- Adicione mais projetos conforme necessário -->
+            </div>
+          
+            <!-- Botões de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          
+            <!-- Paginação opcional -->
+            <div class="swiper-pagination"></div>
+          </div>
 
     </section>
+
+
+    <!-- Aqui adicionei o script do carrosel de projetos-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Aqui eu irei iniciar o carrosel e adicionar a personalização-->
+    <script src="scripts/projects.js"></script>
 </body>
 
 </html>
