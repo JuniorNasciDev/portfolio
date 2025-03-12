@@ -9,6 +9,7 @@
 
   .swiper {
     width: 90vw;
+    max-width: 1000px;
     height: 400px; /* Ou o tamanho desejado */
   }
 
@@ -57,4 +58,3 @@
 
 
 
-  
