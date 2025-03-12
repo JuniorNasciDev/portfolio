@@ -38,7 +38,7 @@
   }
 
   .menu-hamburguer{
-    position: fixed
+    position: absolute;
   }
 
 /*aqui irei definir a Animação hover de todo o menu navegação*/
@@ -54,23 +54,25 @@
 
 /*Responsividade - MEdia queryes - TELAS*/
 
-/*tela 450(w) X 932(h) */
+/*tela 630(w) X 932(h) */
 
 @media (max-width: 630px) {
-  .nav-list {
+  .menu-hamburguer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;   
     border-bottom: none(--cor-marrom-1);
     background-color: rgba(0, 0, 0, 0.938);
     border-radius: 0px;
     border: none;
-    width: 100%;
   }
   .nav-item {
-    margin: 1em;
-    width: max-content;
+    margin: 1em auto;
+    width: max-content
+
   }
 
   
@@ -81,14 +83,12 @@
     gap: 5px;
     width: 30px; /* Largura do botão */
     height: 30px; /* Altura do botão */
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     position: absolute;
     top: 20px;
     left: 20px;
     z-index: 10;
-    
+    background-color: rgba(0, 0, 0, 0.712);
     background-image: url(../images/icons/nav-icon-red.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -101,6 +101,7 @@
   }
   #menu-toc:checked ~ #nav-main{
     display: flex;
+    justify-content: center;
   }
   #menu-toc:checked ~ .menu-label{
     background-image: url(../images/icons/x-red.png);
@@ -108,4 +109,9 @@
 
 }
 
-/*tela (w) X 932(h) */
+/*tela 1200px(w) X 932(h) */
+@media (max-width: 1200px){
+  .nav-list{
+    min-width: 600px;
+  }
+}

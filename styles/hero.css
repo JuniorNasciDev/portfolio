@@ -1,67 +1,117 @@
+#hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
 
-#hero{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.img-title-hero {
+  width: 200px;
+  margin: 10em auto 0em;
+}
+
+.img-title-one {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.sub-title-one {
+  font-size: 22px;
+  color: #9c0c0c;
+}
+
+.title-one {
+  font-size: 10em;
+}
+
+.sub-title-two {
+  text-align: end;
+  font-size: 22px;
+  color: #9c0c0c;
+}
+
+.hero-box-buttons {
+  display: flex;
+  margin: 5em 0em 0em 0em;
+}
+
+.buttons-hero {
+  font-size: 3em;
+  margin: 0em 0.2em;
+  border: 1px solid #f21313;
+  background: none;
+  color: white;
+  padding: 0em 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons-hero:hover {
+  background-color: #f21313;
+  box-shadow: 0px 2px 10px 4px #9c0c0c;
+}
+
+.link-hero-saibamais {
+  color: white;
+}
+.box-saibamais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6em 0em;
+}
+.img-saibamais {
+  width: 1.5em;
+}
+
+/*tela 630(w) X 932(h) */
+
+@media (max-width: 760px) {
+  .title-one {
+    font-size: 7em;
+  }
 }
 
 
-.img-title-hero{
-    width: 200px;
-    margin: 10em auto 0em;
-}
 
-.img-title-one{
-    display: flex;
-    flex-direction: column;
-    color: white;
-}
+@media (max-width: 550px) {
 
-.sub-title-one{
-    font-size: 22px;
-}
+    .img-title-hero{
+        margin: 5em auto 0em;
+    }
 
-.title-one{
-    font-size: 10em;
-}
+  .img-saibamais {
+    width: 1.5em;
+  }
 
-.sub-title-two{
+  .sub-title-one {
+    font-size: 16px;
+    color: #9c0c0c;
+  }
+
+  .title-one {
+    font-size: 5em;
+  }
+
+  .sub-title-two {
     text-align: end;
-    font-size: 22px;
-}
+    font-size: 16px;
+    color: #9c0c0c;
+  }
 
-.hero-box-buttons{
-    display: flex;
-    margin: 3em
-}
-
-.buttons-hero{
-    font-size: 3em;
-    margin: 0em 1em;
-    border: 1px solid #F21313;
+  .buttons-hero {
+    font-size: 2em;
+    margin: 0em 0.2em;
+    border: 1px solid #f21313;
     background: none;
     color: white;
-    padding: 0em 1em;
+    padding: 0em 0.3em;
     border-radius: 5px;
     cursor: pointer;
+  }
 }
 
-.buttons-hero:hover{
-    background-color: #F21313;
-    box-shadow: 0px 2px 10px 4px #9c0c0c;
-}
-
-.link-hero-saibamais{
-    color: white;
-}
-.box-saibamais{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 4em 0em;
-}
-.img-saibamais{
-    width: 2em;
-}
+/* medias q ueriessssss*/
