@@ -17,30 +17,33 @@ const swiper = new Swiper(".swiper", {
     },
   });
 
+  
+
 
 
   // nessa parte eu crio as funções de troca de imagens para conseguir
 //Pagina frontal
 btn1 = document.querySelector("#img-project-1");
-btn2 = document.querySelector("#img-project-2");
-btn3 = document.querySelector("#img-project-3");
-btn4 = document.querySelector("#img-project-4");
-btn5 = document.querySelector("#img-project-5");
-//Pagina Back
 btn1S = document.querySelector("#img-project-s1");
-btn2S = document.querySelector("#img-project-s2");
-btn3S = document.querySelector("#img-project-s3");
-btn4S = document.querySelector("#img-project-s4");
-btn5S = document.querySelector("#img-project-s5");
+btn1T = document.querySelector("#img-project-t1");
+
 //Titulo projeto
 textoProjeto = document.querySelector('#titulo-projeto')
 
 
+//Criação das variaveis 
 
-indice = 0;
-projetos = ['Dragon ball Z','Steach Lilo','terceiro anime']
+let esquerda = -1
+let agora = 0
+let direita = 1
+let listaProjeto = ['dragon ball','stich','Carros','It a Coisa']
+textoProjeto.innerText = listaProjeto[0]
 
-textoProjeto.innerText = projetos[indice]
+// esquerda
+
+
+
+
 
 function trocaImagem(){
   document.addEventListener('click',(event)=>{
@@ -62,6 +65,15 @@ function trocaImagem(){
         salva = `${btn1S.src}`
         btn1S.src = `${event.target.src}`
         document.querySelector(`#${event.target.id}`).src = salva
+    } else if(event.target.id == 'img-project-t1'){
+      alert('St1')
+    }else if (event.target.id == 'img-project-t2' ||
+      event.target.id == 'img-project-t3' ||
+      event.target.id == 'img-project-t4' ||
+      event.target.id == 'img-project-t5'){
+        salva = `${btn1T.src}`
+        btn1T.src = `${event.target.src}`
+        document.querySelector(`#${event.target.id}`).src = salva
     }
   })
 }
@@ -69,20 +81,37 @@ function trocaImagem(){
 function adicionaProjeto(){
   // <- puxando para a direita : 1-0 - 0-0 
   // -> puxando para a esquerda : 1-1 - 0-1
-  let direcao
-  if(swiper.activeIndex == 0){
-    direcao = 'esquerda'
-  }else if(swiper.activeIndex == 1){
-    direcao = 'direita'
-  }
-  console.log(direcao)
+let direcao;
+let indiceAnterior = swiper.previousIndex; // Pegando o índice anterior do Swiper
+let indiceAtual = swiper.activeIndex; // Pegando o índice atual
 
-  if(direcao == 'direita'){
-    indice ++
-  }else{
-    indice --
+if (indiceAtual > indiceAnterior) {
+  direcao = "direita";
+} else if (indiceAtual < indiceAnterior) {
+  direcao = "esquerda";
+}
+
+if (direcao === "direita") {
+  if(direita >= listaProjeto.length){
+    direita = 0
   }
-  textoProjeto.innerText = projetos[indice]
+  agora = direita
+  direita = agora + 1
+  esquerda = agora - 1
+  console.log('direita ->')
+  console.log(esquerda,agora,direita)
+
+} else if (direcao === "esquerda") {
+  if(esquerda < 0){
+    esquerda = listaProjeto.length-1
+  }
+    agora = esquerda
+    esquerda = agora-1
+    direita = agora+1
+    console.log('<- esquerda')
+    console.log(esquerda,agora,direita)
+  }
+  textoProjeto.innerText = listaProjeto[agora]
 }
 
 
