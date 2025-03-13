@@ -1,10 +1,11 @@
 #hero {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  max-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow: hidden;
+  
 }
 
 .img-title-hero {
@@ -80,12 +81,19 @@
 @media (max-width: 550px) {
 
   #hero{
-    width: 110vw;
+    width: 100%;
+    height: 100vh;
   }
 
-    .img-title-hero{
-        margin: 5em auto 0em auto;
-    }
+  .img-title-hero {
+    width: 200px;
+    margin: 2em auto;
+  }
+
+  .title-one {
+    font-size: 4em;
+  }
+
 
   .img-saibamais {
     width: 1.5em;
@@ -96,10 +104,6 @@
     color: #9c0c0c;
   }
 
-  .title-one {
-    font-size: 5em;
-  }
-
   .sub-title-two {
     text-align: end;
     font-size: 16px;
@@ -108,7 +112,7 @@
 
   .buttons-hero {
     font-size: 2em;
-    margin: 0em 0.2em;
+    margin: 0em 0.1em;
     border: 1px solid #f21313;
     background: none;
     color: white;

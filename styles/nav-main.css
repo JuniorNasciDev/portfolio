@@ -39,6 +39,7 @@
 
   .menu-hamburguer{
     position: fixed;
+    z-index: 10;
   }
 
 /*aqui irei definir a Animação hover de todo o menu navegação*/
