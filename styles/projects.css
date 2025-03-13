@@ -72,9 +72,8 @@
   }
 
 
-  .saibamais-projects,.img-saibamais-project{
-    font-size: 0.5em;
-  }
+
+
 
   .icon-technology{
     max-width: 100%;
@@ -100,6 +99,10 @@
     opacity: 1;
   }
 
+  .saibamais-projects,.img-saibamais-projec{
+    font-size: 16px;
+  }
+
 
 
   /*Mobile Responsividade*/
@@ -123,6 +126,7 @@
     align-items: center;
     justify-content: center;
   }
+  
 
   .swiper{
     left: 0px;
