@@ -2,7 +2,7 @@ const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween: 10,
     effect:'cube',
-    loop: true, // Loop infinito
+    loop: false, // Loop infinito
     on: {
       slideChangeTransitionStart: function () {
         adicionaProjeto();}

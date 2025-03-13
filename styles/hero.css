@@ -79,6 +79,10 @@
 
 @media (max-width: 550px) {
 
+  #hero{
+    width: 110vw;
+  }
+
     .img-title-hero{
         margin: 5em auto 0em auto;
     }
