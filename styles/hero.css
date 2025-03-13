@@ -80,7 +80,7 @@
 @media (max-width: 550px) {
 
     .img-title-hero{
-        margin: 5em auto 0em;
+        margin: 5em auto 0em auto;
     }
 
   .img-saibamais {
