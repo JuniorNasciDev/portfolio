@@ -22,6 +22,7 @@
     height: 50vh;
     max-width: 800px;
     border-radius: 10px;
+
 }
 
 
@@ -37,7 +38,7 @@
 
 
 .certificate-title{
-    font-size: 2em;
+    font-size: 2.3em;
     text-align: center;
     margin: 0.5em;
     overflow-wrap: break-word;
@@ -54,18 +55,16 @@
 
 .button-baixar{
     position:absolute;
-    display: inline-block;
     bottom: 0;
     margin: auto;
-    font-size: 1em;
-    padding: 0.5em 1.5em;
+    padding: 0.5em 1em;
+    font-size: 1.7em;
     background: none;
     border: 3px solid rgba(255, 0, 0, 0.319);
     border-radius: 20px;
     color: white;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-weight: 700;
+    left: 20%;
 
 }
 
@@ -93,6 +92,7 @@
     flex-grow: 1;
     overflow: hidden;
     max-width: 50%;
+    margin-top: 7em;
 }
 
 .certificate-item{
@@ -123,6 +123,9 @@
 
 }
 
+.certificate-title-mobile{
+    font-size: 5em;
+}
 
 
 @media (max-width: 550px) {
@@ -173,6 +176,7 @@
         margin: 20px auto;
         font-size: 12px;
         padding: 0.5em;
+        left: 0px;
 
     }
     .window-carrosel-certificate{
