@@ -14,7 +14,6 @@
 }
 
 #contato-form{
-    border: 2px solid rgb(210, 19, 19);
     border-radius: 5px;
     width: 80%;
     height: 50vh;
@@ -37,6 +36,127 @@
 
 .box-contato-entry{
     flex-grow: 1;
+    width: 100%;
+    
 }
 
+.box-input-contato{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px 10px 1px 1px;
+    overflow: hidden;
+    
+}
 
+.contato-entry-email{
+    flex-grow: 1;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 800;
+    background-color: rgb(158, 37, 37);
+    color: white;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+.contato-canvas{
+    width: 100%;
+    background-color: rgba(61, 30, 186, 0.063);
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 1px 1px 10px 10px;
+}
+
+.contato-canvas-menu{
+    max-width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    
+}
+
+.area-escrita-contato{
+    display: flex;
+    align-items: center;
+}
+
+#text-area-canvas{
+    width: 100%;
+    font-size: 2em;
+    height: 1em;
+    resize: none;
+    overflow: hidden;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.linha-canva-num{
+    display: flex;
+    align-items: center;
+}
+.num-canva{
+    font-size: 2em;
+    margin: 0.2em 0.5em;
+}
+
+.contato-assunto{
+    width: 20%;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(158, 37, 37);
+    border: none;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.contato-assunto:focus{
+    outline: none;
+}
+
+.contato-button-env{
+    padding: 0.5em 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgb(158, 37, 37);
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+    border: none;
+}
+.contato-button-env:hover{
+    padding: 0.5em 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(158, 37, 37);
+    cursor: pointer;
+}
+
+.contato-button-env:active{
+    padding: 0.5em 2em;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgb(158, 37, 37);
+    color: white;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.contato-links{
+    box-sizing: border-box;
+    display: block;
+    width: 80px;
+    border-radius: 360px;
+    border: none;
+    overflow: hidden;
+}
+.contato-link-img{
+    width: 100%;
+}
