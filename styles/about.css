@@ -8,7 +8,7 @@
     overflow: auto;
   }
 
-  .box-sobre{
+  .about-box{
     flex-grow: 1;
     width: 100%;
     display: flex;
@@ -19,7 +19,7 @@
   }
 
 
-  .box-sobre-img{
+  .about-box-img{
     width: 50vw;
     overflow: hidden;
     height: 300px;
@@ -29,28 +29,30 @@
     max-width: 450px;
   }
 
-  .img-sobre-s{
+  .about-img{
     width: 100%;
   }
 
-  .box-biografia{
+
+
+  .box-biography{
     overflow: hidden;
     width: 80vw;
     max-width: 850px;
   }
 
-  .sub-nav-biografia{
+  .sub-nav-biography{
     display: flex;
     margin: 1em -7px;
     width: 100%;
   }
 
-  .sub-nav-biografia-item{
+  .sub-nav-item-biography{
     padding: 0px;
   }
 
 
-  .sub-nav-biografia-link{
+  .sub-nav-link-biography{
     background: none;
     color: #750a0a;;
     border: none;
@@ -58,7 +60,7 @@
     cursor: pointer;
   }
 
-  #title-text-biografia{
+  #title-text-biography{
     font-size: 2em;
     font-family: var(--font-destaque);
     font-weight: 800;
@@ -66,7 +68,7 @@
 
   }
 
-  #box-text-biografia{
+  #box-text-biography{
     height: 300px;
     text-wrap: wrap;
     overflow: auto;
@@ -99,7 +101,7 @@
 
   /*Aqui irei fazer minhas animações hover do about*/
 
-.sub-nav-biografia-link:hover{
+.sub-nav-link-biography:hover{
   color: #FF0B0B;
 }
 
@@ -127,18 +129,18 @@
     align-items: center;
     margin: 0;
   }
-  .box-sobre{
+  .about-box{
     flex-grow: 1;
     left: 20px;
     
   }
-  .box-sobre-img{
+  .about-box-img{
     width: 60vw;
     overflow: hidden;
     height: 200px;
   }
 
-  #box-text-biografia{
+  #box-text-biography{
     height: 250px;
     margin-bottom: 0px;
   }

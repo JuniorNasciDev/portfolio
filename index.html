@@ -12,16 +12,22 @@
 
 <body>
 
-    <div class="menu-hamburguer">
 
+
+
+
+    <!-- <div class="box-saibamais">
+        <a class="link-hero-saibamais" href="#about">conhecer mais</a>
+        <img class="img-saibamais" src="images/icons/caret-down white.png" alt="seta">
+    </div> -->
+
+    <!-- ReVISANDO, POLINDO E Ajustando o site-->
+
+    <header class="menu-hamburguer">
         <input type="checkbox" id="menu-toc">
-
         <label for="menu-toc" class="menu-label">
-              
-        </label>
-
+        </label>     
         <nav id="nav-main">
-
             <ul class="nav-list">
                 <li class="nav-item">
                     <a href="#" class="nav-link">HOME</a>
@@ -41,44 +47,41 @@
                 </li>
             </ul>
         </nav>
+    </header>
 
-    </div>
-   
     <section id="hero">
         <div class="img-title-one">
             <img class="img-title-hero" src="images/teste.png" alt="simbolo Developer">
             <div class="box-title">
                 <h2 class="sub-title-one">Junior nasci</h2>
                 <h1 class="title-one">Full-Stack</h1>
-                <h2 class="sub-title-two">developer in desenvolvimento</h2>
+                <h2 class="sub-title-two">Web Developer</h2>
             </div>
         </div>
         <div class="hero-box-buttons">
-            <button class="buttons-hero" id="curriculo-download-hero">Curriculo</button>
-            <button class="buttons-hero" id="curriculo-hero">Contato</button>
+            <button class="hero-buttons" id="curriculo-download-hero">Curriculo</button>
+            <button class="hero-buttons" id="curriculo-hero">Contato</button>
         </div>
-        <div class="box-saibamais">
-            <a class="link-hero-saibamais" href="#about">conhecer mais</a>
-            <img class="img-saibamais" src="images/icons/caret-down white.png" alt="seta">
-        </div>
+      
     </section>
+
     <section id="about">
-        <div class="box-sobre">
-            <div class="box-sobre-img">
-                <img class="img-sobre-s" src="images/junior.png" alt="teste de imagem">
+        <div class="about-box">
+            <div class="about-box-img">
+                <img class="about-img" src="images/junior.png" alt="teste de imagem">
             </div>
             
-            <div class="box-biografia">
-                <ul class="sub-nav-biografia">
-                    <li class="sub-nav-biografia-item">
-                        <button class="sub-nav-biografia-link">Sobre mim</button>
+            <div class="box-biography">
+                <ul class="sub-nav-biography">
+                    <li class="sub-nav-item-biography">
+                        <button class="sub-nav-link-biography">Sobre mim</button>
                     </li>
-                    <li class="sub-nav-biografia-item">
-                        <button class="sub-nav-biografia-link">Experiência</button>
+                    <li class="sub-nav-item-biography">
+                        <button class="sub-nav-link-biography">Experiência</button>
                     </li>
                 </ul>
-                <h2 id="title-text-biografia">Biografia</h2>
-                <div id="box-text-biografia">
+                <h2 id="title-text-biography">Biografia</h2>
+                <div id="box-text-biography">
                     <h4 class="sub-title-paragraph">Uma Jornada de Evolução e Determinação</h4>
                     <p class="text-paragraph">
                         Welinton Farias do Nascimento Junior nasceu em 13 de agosto de 2001, em Mogi das Cruzes, São Paulo. Ao longo de sua vida, passou por diferentes cidades, incluindo Natal (RN) e Taubaté (SP), mas sempre retornou à sua cidade natal. Criado por pais nordestinos, sua infância foi marcada por uma vida ativa e cheia de aventuras, típica de quem cresceu brincando nas ruas. Desde pequeno, Welinton se destacou pelo espírito inquieto e curioso, sempre em busca de novas experiências. Isso o levou a algumas histórias memoráveis, como bater a cabeça ao empinar pipa à noite, torcer o dedo ao descer um morro de bicicleta sem freio e até mesmo atropelar um carro estacionado.
@@ -113,11 +116,6 @@
                         Com essa mentalidade, Welinton continua sua jornada, determinado a transformar sua paixão em uma carreira sólida e impactante. Seu futuro está sendo moldado a cada linha de código escrita e a cada desafio superado.
                     </p>
                 </div>
-            </div>
-
-            <div class="box-saibamais box-about-saibamais">
-                <a class="link-hero-saibamais" href="#projects">conhecer Projetos</a>
-                <img class="img-saibamais" src="images/icons/caret-down white.png" alt="seta">
             </div>
 
         </div>
@@ -223,10 +221,6 @@
             
           </div>
 
-          <div class="box-saibamais box-about-saibamais">
-            <a class="link-hero-saibamais saibamais-projects" href="#certificates">conhecer certificados</a>
-            <img class="img-saibamais img-saibamais-projec" src="images/icons/caret-down white.png" alt="seta">
-        </div>
 
           
 
@@ -321,6 +315,7 @@
    
     </section>
 
+    <footer><p>desenvolvido por junior nasci</p></footer>
 
     <!-- Aqui adicionei o script do carrosel de projetos-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
