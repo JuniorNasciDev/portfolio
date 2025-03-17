@@ -14,13 +14,7 @@ document.addEventListener("keydown", function (event) {
     const numeroLinhas = textArea.value.split('\n').length
     console.log(numeroLinhas)
 
-    if(numeroLinhas == 1){
-        listaCanvas.innerHTML = `
-                        <li class="linhas-canva-num" id="#linhas-num">
-                            <p class="num-canva" id="linhas-canva-num-p">1</p>
-                        </li>
-    `
-    }else{
+   
         listaCanvas.innerHTML = ''
         for(c = 1; c <= numeroLinhas; c++){
             listaCanvas.innerHTML += `<li class="linhas-canva-num" id="#linhas-num">
@@ -28,7 +22,7 @@ document.addEventListener("keydown", function (event) {
                             </li>`
                 
         }
-    }
+    
     
  
     textArea.addEventListener("input",()=>{
