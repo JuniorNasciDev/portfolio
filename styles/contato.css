@@ -262,3 +262,26 @@
 
     }
 }
+
+@media(max-width:320px){
+    #contato{
+        justify-content: space-around;
+    }
+    .contato-title{
+        font-size: 3rem;
+        margin-top: 1em;
+
+    }
+
+    #contato-form{
+        flex-grow: 1;
+    }
+    .contato-assunto{
+        font-size: 10px;
+    }
+    .contato-entry-email{
+        font-size: 14px;
+    }
+   
+}
+

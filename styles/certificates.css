@@ -187,4 +187,44 @@
     }
 
 }
+
+
+@media(max-width:320px){
+    #certificates{
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .certificate-title-mobile{
+        margin-top: 2em;
+        font-size: 3em;
+    }
+
+    .certificate-text{
+        font-size: 10px;
+        width: 100%;
+    }
+    .certificate-title{
+        font-size: 16px;
+    }
+    .certificate-sub-title{
+        font-size: 10px;
+    }
+    .certificate-saibamais{
+        position: relative;
+
+    }
+
+    .window-carrosel-certificate{
+        background-color: rgba(255, 0, 0, 0.156);
+        height: 100%;
+        margin: 0;
+    }
+
+    .box-certificates{
+        margin:0px;
+        padding: 0px;
+        max-width: 90%;
+    }
+}
   

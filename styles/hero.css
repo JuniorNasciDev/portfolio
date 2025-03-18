@@ -150,6 +150,8 @@
 
   .hero-buttons{
     font-size: 1.4em;
+    padding: 10px 1.2em ;
+    margin-bottom: 2em;
   }
   .img-title-hero {
     width: 140px;
@@ -157,3 +159,8 @@
   }
  
 }
+
+
+
+
+
