@@ -45,18 +45,17 @@
   }
 
   .sub-imgs-window{
-    flex-grow: 1;
-    max-height: 24%;
+    max-height: 100px;
 
   }
 
-  #titulo-projeto{
+  #project-title{
     color: white;
     font-size: 2em;
     margin-top: 50px;
   }
 
-  .box-technology-project{
+  .project-box-technology{
     width: 25vw;
     height: 50px;
     display: flex;
@@ -145,3 +144,10 @@
 }
 
 /* medias q ueriessssss*/
+
+
+@media(max-width:320px){
+  #project-title{
+    font-size: 1.5em;
+  }
+}

@@ -28,7 +28,7 @@ btn1S = document.querySelector("#img-project-s1");
 btn1T = document.querySelector("#img-project-t1");
 
 //Titulo projeto
-textoProjeto = document.querySelector('#titulo-projeto')
+textoProjeto = document.querySelector('.tecnologia-titulo')
 
 
 //Criação das variaveis 

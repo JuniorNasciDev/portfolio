@@ -5,6 +5,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  position: relative;
   
 }
 
@@ -69,6 +70,13 @@
   width: 1.5em;
 }
 
+.link-saiba-mais{
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  bottom: 1em;
+}
+
 /*tela 630(w) X 932(h) */
 
 @media (max-width: 760px) {
@@ -125,3 +133,27 @@
 }
 
 /* medias q ueriessssss*/
+
+
+
+@media(max-width: 320px){
+
+  #hero{
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+  }
+
+  .hero-box-buttons{
+    max-width: 100%;
+  }
+
+  .hero-buttons{
+    font-size: 1.4em;
+  }
+  .img-title-hero {
+    width: 140px;
+    margin: auto;
+  }
+ 
+}
