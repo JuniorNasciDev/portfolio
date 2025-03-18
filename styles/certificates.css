@@ -128,68 +128,9 @@
 }
 
 
-@media (max-width: 550px) {
-
-    .box-certificates{
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .list-certificates{
-        width: 95%;
-        margin-top:10px ;
-        height: 230px;
-        margin: auto;
-    }
-
-    .certificate-item{
-        width: 85%;
-        height: 120px;
-    }
-
-    .atual-certificate{
-        width: 90%;
-        left: 7px;
-        top: 50px;
-        z-index: 3;
-    }
-
-    .box-certificate-info{
-    }
-
-    .certificate-title{
-        font-size: 18px;
-    }
-
-    .certificate-sub-title{
-        font-size: 14px;
-    }
-
-    .certificate-text{
-        font-size: 12px;
-    }
-
-    .button-baixar{
-        padding: 0.1em 0em;
-        width: 100%;
-        position: relative;;
-        margin: 20px auto;
-        font-size: 12px;
-        padding: 0.5em;
-        left: 0px;
-
-    }
-    .window-carrosel-certificate{
-        margin-top: 20%;
-    }
-    .certificate-title-mobile{
-        font-size: 32px;
-    }
-
-}
 
 
-@media(max-width:320px){
+@media(min-width:320px){
     #certificates{
         justify-content: space-between;
         position: relative;
@@ -225,6 +166,17 @@
         margin:0px;
         padding: 0px;
         max-width: 90%;
+    }
+
+    .button-baixar{
+        padding: 0.1em 0em;
+        width: 100%;
+        position: relative;;
+        margin: 20px auto;
+        font-size: 12px;
+        padding: 0.5em;
+        left: 0px;
+
     }
 }
   

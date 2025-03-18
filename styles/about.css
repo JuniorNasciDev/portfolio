@@ -108,21 +108,26 @@
 
 
 
-@media(max-width: 320px){
+@media(min-width: 320px){
+  #about{
+    position: relative;
+  }
   #box-text-biography{
     height: 140px;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
   }
   #title-text-biography{
     font-size: 1.5em;
   }
-
   .sub-title-paragraph{
     font-size: 0.8em;
   }
+  .about-box-img{
+    height: 140PX;
+  }
 }
 
-@media (max-width: 481px) {
+@media (min-width: 481px) {
   #about {
     position: relative;
     width: 100%;
