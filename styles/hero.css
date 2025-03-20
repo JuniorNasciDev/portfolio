@@ -74,7 +74,7 @@
   color: white;
   text-decoration: none;
   position: absolute;
-  bottom: 3em;
+  bottom: 2em;
 }
 
 /*tela 630(w) X 932(h) */
@@ -161,7 +161,7 @@
 }
 
 
-@media (min-width: 481px){
+@media (min-width: 421px){
   .hero-buttons{
     font-size: 2.2em;
     padding: 0.2em 1em;
