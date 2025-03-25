@@ -1,6 +1,6 @@
 #hero {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -11,7 +11,6 @@
 
 .img-title-hero {
   width: 200px;
-  margin: 10em auto 0em;
 }
 
 .img-title-one {
@@ -26,7 +25,7 @@
 }
 
 .title-one {
-  font-size: 10em;
+  font-size: 2em;
 }
 
 .sub-title-two {
@@ -73,8 +72,7 @@
 .link-saiba-mais{
   color: white;
   text-decoration: none;
-  position: absolute;
-  bottom: 2em;
+  margin-bottom: 0.3em;
 }
 
 /*tela 630(w) X 932(h) */
@@ -90,15 +88,10 @@
 
 /* medias q ueriessssss*/
 
+/* Celular pequeno 320x480*/
 
+@media(min-width: 320px){
 
-@media(min-width: 320px) and (max-height:480px){
-
-  #hero{
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-  }
 
   .hero-box-buttons{
     max-width: 100%;
@@ -111,13 +104,25 @@
   }
   .img-title-hero {
     width: 140px;
-    margin: auto;
+    margin: 1em auto;
+  }
+  .title-one{
+      font-size: 4em;
+  }
+  .hero-box-buttons{
+      width: 100%;
+      justify-content: space-evenly;
+      margin-bottom: 1em;
+  }
+  .hero-buttons{
+      font-size: 1.2em;
   }
  
 }
 
 
-@media (min-width: 421px){
+/* Celular medio 481px – 768px */
+@media (min-width: 481px){
   
   #hero{
     width: 100%;
@@ -176,4 +181,74 @@
   }
 }
 
+/* Tablets (MD): 769px – 1024px*/
+@media (min-width:769px){
+  .title-one{
+      font-size: 9rem;
+  }
+  .sub-title-one,.sub-title-two{
+      font-size: 1.5rem;
+  }
+  .hero-buttons{
+      font-size: 3.3rem;
+  }
+  .link-saiba-mais{
+      font-size: 1.2rem;
+  }
+  .img-title-hero {
+      width: 20rem;
+      margin: auto;
+    }
+}
+
+/* Laptops pequenos (LG): 1025px – 1280px */
+@media (min-width:1025px){
+.title-one{
+  font-size: 7rem;
+}
+.sub-title-one,.sub-title-two{
+  font-size: 1rem;
+}
+.img-title-hero{
+  width: 15rem;
+  margin-top: 5em;
+}
+.hero-buttons{
+  font-size: 2.5em;
+  margin: 0em 1.5em;
+ 
+}
+.link-saiba-mais{
+  font-size: 1em;
+}
+.hero-box-buttons{
+  justify-content: center;
+}
+}
+
+/* Desktops comuns (XL): 1281px – 1440px */
+
+@media (min-width:1281px){
+.title-one{
+  font-size: 7rem;
+}
+.sub-title-one,.sub-title-two{
+  font-size: 1rem;
+}
+.img-title-hero{
+  width: 15rem;
+  margin-top: 5em;
+}
+.hero-buttons{
+  font-size: 2.5em;
+  margin: 0em 1.5em;
+ 
+}
+.link-saiba-mais{
+  font-size: 1em;
+}
+.hero-box-buttons{
+  justify-content: center;
+}
+}
 
