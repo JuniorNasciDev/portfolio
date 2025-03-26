@@ -1,158 +1,175 @@
 #about {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    overflow: auto;
-  }
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
 
-  .about-box{
-    flex-grow: 1;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-
-
-  .about-box-img{
-    width: 50vw;
-    overflow: hidden;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 450px;
-  }
-
-  .about-img{
-    width: 100%;
-  }
+.about-box{
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 
 
+.about-box-img{
+  width: 50vw;
+  overflow: hidden;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+}
 
-  .box-biography{
-    overflow: hidden;
-    width: 80vw;
-    max-width: 850px;
-  }
-
-  .sub-nav-biography{
-    display: flex;
-    margin: 1em -7px;
-    width: 100%;
-  }
-
-  .sub-nav-item-biography{
-    padding: 0px;
-  }
+.about-img{
+  width: 100%;
+}
 
 
-  .sub-nav-link-biography{
-    background: none;
-    color: #750a0a;;
-    border: none;
-    font-weight: 600;
-    cursor: pointer;
-  }
 
-  #title-text-biography{
-    font-size: 2em;
-    font-family: var(--font-destaque);
-    font-weight: 800;
-    margin-bottom: 0.3em;
+.box-biography{
+  overflow: hidden;
+  width: 80vw;
+  max-width: 850px;
+}
 
-  }
+.sub-nav-biography{
+  display: flex;
+  margin: 1em -7px;
+  width: 100%;
+}
 
-  #box-text-biography{
-    height: 300px;
-    text-wrap: wrap;
-    overflow: auto;
-    scrollbar-width: 0px;
-    scrollbar-width: none;
+.sub-nav-item-biography{
+  padding: 0px;
+}
 
-  }
 
-  .text-paragraph{
-    font-size: 14px;
-    font-weight: 400;
-    margin: 1em 0em;
-    line-height: 1.2em;
-    color: rgb(230, 221, 221);
-  }
+.sub-nav-link-biography{
+  background: none;
+  color: #750a0a;;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
 
-  .sub-title-paragraph{
-    font-weight: bold;
-  }
+#title-text-biography{
+  font-size: 2em;
+  font-family: var(--font-destaque);
+  font-weight: 800;
+  margin-bottom: 0.3em;
 
-  .about-citacoes{
-    font-style: italic;
-    padding: 0em 0.2em;
-    font-size: 1.1em;
-  }
+}
+
+#box-text-biography{
+  height: 300px;
+  text-wrap: wrap;
+  overflow: auto;
+  scrollbar-width: 0px;
+  scrollbar-width: none;
+
+}
+
+.text-paragraph{
+  font-size: 14px;
+  font-weight: 400;
+  margin: 1em 0em;
+  line-height: 1.2em;
+  color: rgb(230, 221, 221);
+}
+
+.sub-title-paragraph{
+  font-weight: bold;
+}
+
+.about-citacoes{
+  font-style: italic;
+  padding: 0em 0.2em;
+  font-size: 1.1em;
+}
 
 .box-about-saibamais{
-  margin: 2em 0em 0em 0em;
+margin: 2em 0em 0em 0em;
 }
 
-  /*Aqui irei fazer minhas animações hover do about*/
+/*Aqui irei fazer minhas animações hover do about*/
 
 .sub-nav-link-biography:hover{
-  color: #FF0B0B;
+color: #FF0B0B;
 }
 
 
 
 
-@media(min-width: 320px){
-  #about{
-    position: relative;
-  }
-  #box-text-biography{
-    height: 140px;
-    margin-bottom: 1em;
-  }
-  #title-text-biography{
-    font-size: 1.5em;
-  }
-  .sub-title-paragraph{
-    font-size: 0.8em;
-  }
-  .about-box-img{
-    height: 140PX;
-  }
+/*  📱 Mobile (Celulares)
+      Pequenos (XS): 320px – 480px (exemplo: iPhone SE, Galaxy A01)
+      Médios (SM): 481px – 768px (exemplo: iPhone 14, Galaxy S23)
+  💻 Tablets & Pequenos Laptops
+      Tablets (MD): 769px – 1024px (iPad, Galaxy Tab)
+      Laptops pequenos (LG): 1025px – 1280px (Chromebooks, MacBook Air 13")
+  🖥️ Desktops & Telas Grandes
+      Desktops comuns (XL): 1281px – 1440px (monitores padrão)
+      Telas grandes (2XL): 1441px+ (monitores ultrawide, 4K)
+*/
+
+
+
+/* Pequenos (XS): 320px – 480px (exemplo: iPhone SE, Galaxy A01) */
+@media (min-width:320px){
+.about-box-img{
+  width: 100%;
+  max-height: 200px;
+}
+.about-img{
+  width: 50%;
+}
+#box-text-biography{
+  flex-grow: 1;
+}
+.link-saiba-mais{
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.sub-nav-biography{
+  margin: 0;
+  margin-top: 10px;
 }
 
-@media (min-width: 481px) {
-  #about {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  .about-box{
-    flex-grow: 1;
-    left: 20px;
-    
-  }
-  .about-box-img{
-    width: 60vw;
-    overflow: hidden;
-    height: 200px;
-  }
-
-  #box-text-biography{
-    height: 250px;
-    margin-bottom: 0px;
-  }
 }
 
+/* Médios (SM): 481px – 768px (exemplo: iPhone 14, Galaxy S23) */
+@media (min-width:481px){
+.about-box-img{
+  width: 100%;
+  max-height: 300px;
+}
+.about-img{
+  width: 70%;
+}
+#box-text-biography{
+  flex-grow: 1;
+}
+.link-saiba-mais{
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.sub-nav-biography{
+  margin: 0;
+  margin-top: 10px;
+}
 
+}
+/* Tablets (MD): 769px – 1024px (iPad, Galaxy Tab) */
