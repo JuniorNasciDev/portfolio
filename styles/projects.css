@@ -12,7 +12,7 @@
 
 .swiper{
   width: 100%; /* Em vez de ocupar 100vw, usa 90% do container pai */
-  max-width: 800px; /* Impede que o Swiper fique grande demais em telas grandes */
+  max-width: 600px; /* Impede que o Swiper fique grande demais em telas grandes */
   height: 400px;
 }
 
@@ -81,6 +81,7 @@
 
   .technology-item{
     flex-grow: 1;
+    max-width: 50px;
     margin: 0em 12px;
   }
 
@@ -93,6 +94,20 @@
 
   .saibamais-projects,.img-saibamais-projec{
     font-size: 16px;
+  }
+
+  #img-project-1:hover{
+    cursor: pointer;
+  }
+  #img-project-s1:hover{
+    cursor: pointer;
+  }
+  #img-project-t1:hover{
+    cursor: pointer;
+  }
+
+  .icon-technology:hover{
+    cursor: pointer;
   }
 
 
@@ -117,6 +132,7 @@
 
   .project-mais{
     font-size: 0.5em;
+    margin-top: 1em;
   }
 
   .project-box-technology{
