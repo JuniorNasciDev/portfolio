@@ -150,6 +150,15 @@ color: #FF0B0B;
 
 }
 
+@media (min-height:900px){
+
+  .link-saiba-mais{
+    margin-bottom: 5em;
+  }
+  
+  }
+  
+
 /* Médios (SM): 481px – 768px (exemplo: iPhone 14, Galaxy S23) */
 @media (min-width:481px){
 .about-box-img{
