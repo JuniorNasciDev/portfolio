@@ -39,29 +39,25 @@ textoProjeto = document.querySelector('.tecnologia-titulo')
 
 
 
-//Criação das variaveis 
+//Criação das variaveis listas projetos ------------------
 let listaProjeto = [
   {
-    nome:'Dragon ball Z',
+    nome:'Dragon ball Zes',
     tec:['html','css','javascript'],
-    imgs: ['url1','url2','url3'],
     id:'Dbz1'
   }, {
     nome:'steach',
-    tec:['html','css','javascript'],
-    imgs: ['url1','url2','url3'],
+    tec:['html','javascript'],
     id:'Stch1'
   },
   {
     nome:'carros',
     tec:['html','css','javascript'],
-    imgs: ['url1','url2','url3'],
     id:'Carros1'
   },
   {
     nome:'bozo',
     tec:['html','css','javascript'],
-    imgs: ['url1','url2','url3'],
     id:'Bozo'
   },
 ]
@@ -70,11 +66,14 @@ textoProjeto.innerText = listaProjeto[0]
 // criação da lista html
 listahtml = document.querySelectorAll('.swiper-slide')
 
-for(let c = 0; c<listahtml.length;c++){
+let c = 0
+
+for(let c = 0; c < listahtml.length;c++){
   listahtml[c].id = listaProjeto[c].id
   console.log(listahtml[c].id)
 }
 
+document.querySelector('.tecnologia-titulo').innerText = listaProjeto[0].nome
 
 
 
@@ -119,14 +118,43 @@ function trocaImagem(){
     }
   })
 }
-trocaImagem()
+
 
 
 function trocaNome(id){
   for(projeto in listaProjeto){
     if(listaProjeto[projeto].id == id){
       document.querySelector('.tecnologia-titulo').innerText = listaProjeto[projeto].nome
-      
+      document.querySelector('.project-box-technology').innerHTML = ''
+      for (tecnologia in listaProjeto[projeto].tec){
+        if(listaProjeto[projeto].tec[tecnologia] == 'html'){
+          document.querySelector('.project-box-technology').innerHTML +=   `
+          <li class="technology-item">
+          <img class="icon-technology" src="images/icons/html-5.png" alt="">
+          </li>
+          `
+        }else if(listaProjeto[projeto].tec[tecnologia] == 'css'){
+          document.querySelector('.project-box-technology').innerHTML +=   `
+          <li class="technology-item">
+          <img class="icon-technology" src="images/icons/css-3.png" alt="">
+          </li>
+          `
+        }else if(listaProjeto[projeto].tec[tecnologia] == 'javascript'){
+          document.querySelector('.project-box-technology').innerHTML +=   `
+          <li class="technology-item">
+          <img class="icon-technology" src="images/icons/script-java.png" alt="">
+          </li>
+          `
+        }
+      }
     }
   }
+ 
 }
+
+
+
+
+
+
+trocaImagem()
